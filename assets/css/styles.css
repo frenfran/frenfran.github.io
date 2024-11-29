@@ -1,27 +1,20 @@
-body {
-    font-family: Arial, sans-serif;
+/* Ensure the body and html take up the full viewport height */
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    display: flex;
+    flex-direction: column;
 }
-header {
-    background-color: #333;
-    color: white;
-    padding: 1em 0;
-    text-align: center;
+
+/* Make the main content take up all remaining space */
+main {
+    flex: 1;
 }
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-}
+
+/* Footer stays at the bottom */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
